@@ -1,0 +1,191 @@
+/* ==========================================================
+   BÂTI-RÉNOV — mise en page RTL (arabe)
+   Chargé après styles.css ; toutes les règles sont scoped à [dir="rtl"].
+   ========================================================== */
+
+[dir="rtl"] body{
+  font-family:var(--arab);
+  line-height:1.95;
+  font-size:15.5px;
+}
+
+/* ---------- Typographie arabe ---------- */
+[dir="rtl"] .h2,
+[dir="rtl"] .hero-title,
+[dir="rtl"] .cta-band h2,
+[dir="rtl"] .service-title,
+[dir="rtl"] .project-name,
+[dir="rtl"] .garden-item h3,
+[dir="rtl"] .commitment h3,
+[dir="rtl"] .step h3,
+[dir="rtl"] .form-card h3,
+[dir="rtl"] .form-success h3,
+[dir="rtl"] .method-quote,
+[dir="rtl"] .footer-claim,
+[dir="rtl"] .contact-signature p{font-family:var(--arab)}
+
+[dir="rtl"] .hero-title{
+  font-size:clamp(3rem,6.6vw,6.2rem);
+  line-height:1.42;
+  letter-spacing:0;
+}
+[dir="rtl"] .h2{
+  font-size:clamp(2rem,3.5vw,3.1rem);
+  line-height:1.5;
+  letter-spacing:0;
+}
+[dir="rtl"] .cta-band h2{
+  font-size:clamp(2.2rem,4.2vw,3.9rem);
+  line-height:1.45;
+  letter-spacing:0;
+}
+[dir="rtl"] .h2 em,
+[dir="rtl"] .hero-title em,
+[dir="rtl"] .cta-band h2 em,
+[dir="rtl"] .h2-light em,
+[dir="rtl"] .method-quote em,
+[dir="rtl"] .footer-claim em{
+  font-family:var(--arab);
+  font-style:normal;
+  font-weight:700;
+  font-size:1.02em;
+  letter-spacing:0;
+}
+[dir="rtl"] .method-quote{
+  font-size:clamp(1.4rem,2.5vw,2.3rem);
+  line-height:1.8;
+  font-style:normal;
+}
+[dir="rtl"] .footer-claim,
+[dir="rtl"] .contact-signature p{font-style:normal;line-height:1.8}
+[dir="rtl"] .service-title{font-size:1.25rem;line-height:1.45}
+
+/* L'espacement des lettres casse la ligature arabe : on le neutralise. */
+[dir="rtl"] .eyebrow,
+[dir="rtl"] .btn,
+[dir="rtl"] .filter,
+[dir="rtl"] .project-cat,
+[dir="rtl"] .service-link,
+[dir="rtl"] .service-num,
+[dir="rtl"] .turnkey-label,
+[dir="rtl"] .strip-inner span,
+[dir="rtl"] .footer-col h4,
+[dir="rtl"] .detail-label,
+[dir="rtl"] .field label,
+[dir="rtl"] .brand-text strong,
+[dir="rtl"] .brand-text small,
+[dir="rtl"] .comparison-tag,
+[dir="rtl"] .garden-shot figcaption,
+[dir="rtl"] .form-legal,
+[dir="rtl"] .scroll-cue,
+[dir="rtl"] .gallery-note,
+[dir="rtl"] .lightbox-figure figcaption span{letter-spacing:0}
+
+[dir="rtl"] .service-card,
+[dir="rtl"] .project-card{text-align:right}
+
+/* ---------- Alignements et décorations inversés ---------- */
+[dir="rtl"] .hero-scrim{
+  background:linear-gradient(270deg,rgba(7,32,38,.88) 0%,rgba(7,32,38,.6) 38%,rgba(7,32,38,.12) 74%,rgba(7,32,38,.2) 100%),
+             linear-gradient(0deg,rgba(7,31,37,.78) 0%,transparent 42%);
+}
+[dir="rtl"] .hero-signature{display:none}
+[dir="rtl"] .skip-link{left:auto;right:-9999px}
+[dir="rtl"] .skip-link:focus{left:auto;right:12px}
+[dir="rtl"] .method-glow{right:auto;left:-260px}
+[dir="rtl"] .method-glow-magenta{left:auto;right:-320px}
+[dir="rtl"] .cta-band{background:linear-gradient(250deg,#006d7d 0%,var(--teal) 58%,#00798b 100%)}
+
+[dir="rtl"] .about-visual{padding:0 0 26px 26px}
+[dir="rtl"] .about-frame{inset:26px 26px 0 0}
+[dir="rtl"] .about-badge{right:auto;left:0}
+
+[dir="rtl"] .service-num{left:auto;right:22px}
+[dir="rtl"] .project-info{left:20px;right:24px}
+[dir="rtl"] .project-zoom{right:auto;left:18px}
+
+[dir="rtl"] .turnkey{border-left:0;border-right:3px solid var(--teal)}
+
+[dir="rtl"] .gardens-badge{left:auto;right:0;border-left:0;border-right:3px solid var(--magenta)}
+[dir="rtl"] .gardens-badge small{direction:rtl;text-align:right}
+
+[dir="rtl"] .method-quote{
+  border-left:0!important;
+  border-right:2px solid var(--magenta)!important;
+  padding-left:0!important;
+  padding-right:clamp(22px,4vw,54px)!important;
+}
+[dir="rtl"] .step{
+  border-right:0;
+  border-left:1px solid rgba(238,246,246,.12);
+  padding:32px 20px 20px!important;
+}
+[dir="rtl"] .step:last-child{border-left:0}
+[dir="rtl"] .step::before{left:auto;right:0;width:calc(100% - 40px)}
+[dir="rtl"] .step p{padding-right:0;padding-left:10px}
+
+[dir="rtl"] .select-wrap::after{right:auto;left:18px}
+[dir="rtl"] .menu-toggle span{left:auto;right:9px}
+[dir="rtl"] .nav-cta{margin-left:0;margin-right:6px}
+[dir="rtl"] .footer-col a:hover{transform:translateX(-3px)}
+[dir="rtl"] .btn:hover span[aria-hidden]{transform:translate(-3px,-3px)}
+
+[dir="rtl"] input[type="email"],
+[dir="rtl"] input[type="tel"]{direction:ltr;text-align:left}
+/* Numéros et e-mails : toujours en lecture LTR, même en page arabe. */
+[dir="rtl"] .contact-detail a[href^="tel"],
+[dir="rtl"] .contact-detail a[href^="mailto"],
+[dir="rtl"] .footer-col a[href^="tel"],
+[dir="rtl"] .footer-col a[href^="mailto"]{direction:ltr;unicode-bidi:isolate;display:inline-block}
+
+/* Le comparateur reste LTR pour garder un curseur intuitif. */
+[dir="rtl"] .comparison,
+[dir="rtl"] .comparison-range{direction:ltr}
+[dir="rtl"] .comparison-tag,
+[dir="rtl"] .comparison-note{direction:rtl;unicode-bidi:isolate}
+
+/* Galerie lightbox : on échange les boutons précédent / suivant. */
+[dir="rtl"] .lightbox-prev{left:auto;right:26px}
+[dir="rtl"] .lightbox-next{right:auto;left:26px}
+[dir="rtl"] .lightbox-close{right:auto;left:32px}
+
+/* ---------- Ajustements responsive ---------- */
+@media (max-width:960px){
+  [dir="rtl"] .steps .step{border-left:1px solid rgba(238,246,246,.12)}
+  /* Sur écran étroit, le dégradé est renforcé pour garder le texte lisible. */
+  [dir="rtl"] .hero-scrim{
+    background:linear-gradient(270deg,rgba(7,32,38,.84) 0%,rgba(7,32,38,.6) 55%,rgba(7,32,38,.44) 100%),
+               linear-gradient(0deg,rgba(7,31,37,.82) 0%,rgba(7,31,37,.28) 46%,rgba(7,31,37,.34) 100%);
+  }
+}
+@media (max-width:700px){
+  [dir="rtl"] .hero-title{font-size:clamp(2.7rem,11vw,4.2rem)}
+  [dir="rtl"] .h2{font-size:clamp(1.9rem,8vw,2.6rem)}
+  [dir="rtl"] .cta-band h2{font-size:clamp(2rem,9vw,3rem)}
+  [dir="rtl"] .method-quote{font-size:1.35rem;padding-right:20px!important}
+  [dir="rtl"] .step{border-left:0!important;padding:24px 0!important}
+  [dir="rtl"] .lightbox-prev{right:6px;left:auto}
+  [dir="rtl"] .lightbox-next{left:6px;right:auto}
+  [dir="rtl"] .lightbox-close{left:16px;right:auto}
+  [dir="rtl"] .gardens-badge span{font-size:.9rem}
+}
+
+/* صفحات الخدمات المخصصة */
+[dir="rtl"] .service-detail-scrim{
+  background:linear-gradient(270deg,rgba(7,32,38,.89) 0%,rgba(7,32,38,.68) 42%,rgba(7,32,38,.23) 80%,rgba(7,32,38,.2) 100%),
+             linear-gradient(0deg,rgba(7,31,37,.76),transparent 68%);
+}
+[dir="rtl"] .service-detail-title{
+  font-family:var(--arab);font-size:clamp(2.8rem,6vw,5.5rem);
+  line-height:1.42;letter-spacing:0
+}
+[dir="rtl"] .service-detail-index,
+[dir="rtl"] .service-detail-card-number{letter-spacing:0;direction:ltr;unicode-bidi:isolate}
+[dir="rtl"] .service-detail-aside{border-left:0;border-right:4px solid var(--magenta)}
+[dir="rtl"] .service-detail-aside::after{right:auto;left:-24px}
+[dir="rtl"] .service-detail-card{border-top:1px solid var(--line);border-right:3px solid var(--teal)}
+[dir="rtl"] .service-detail-card:hover{border-right-color:var(--magenta)}
+[dir="rtl"] .service-detail-scope-note{letter-spacing:0}
+@media (max-width:700px){
+  [dir="rtl"] .service-detail-title{font-size:clamp(2.55rem,10vw,4.1rem);line-height:1.5}
+}
